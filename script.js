@@ -288,3 +288,8 @@ function closeAdsTray() {
   const tray = document.getElementById('adsTray');
   tray.classList.remove('show');
 }
+
+.ad-banner iframe {
+    width: 100%;
+    max-width: 160px;
+}
