@@ -274,3 +274,17 @@ document.getElementById('textInput').addEventListener('keydown', (e) => {
     addText();
   }
 });
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const tray = document.getElementById('adsTray');
+    if (tray) {
+      tray.classList.add('show');
+    }
+  }, 800);
+});
+
+function closeAdsTray() {
+  const tray = document.getElementById('adsTray');
+  tray.classList.remove('show');
+}
